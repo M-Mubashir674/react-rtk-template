@@ -1,0 +1,40 @@
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  height: 100vh;
+  div{
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+
+  }
+
+  div:nth-child(1) {
+    background-color: #e30c2c;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  div:nth-child(2) {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 0.2s;
+    background-color: #0c70e3;
+  }
+
+  div:nth-child(3) {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 0.4s;
+    background-color: #e30c2c;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+  }
+}
