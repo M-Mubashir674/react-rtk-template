@@ -4,9 +4,6 @@ import Main from "src/layouts/Main/Main.jsx";
 const Admin = () => {
     return (
         <Main>
-            {
-                er.map(res => <p>res</p>)
-            }
             <Dashboard/>
         </Main>
     );
